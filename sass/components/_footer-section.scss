@@ -1,0 +1,176 @@
+.footer-section {
+  background-color: var(--background-color-footer-and-about-us-section);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  .footer__container {
+    display: flex;
+    gap: 94px;
+  }
+}
+
+.footer-logo {
+  list-style: none;
+  color: #2196f3;
+  text-decoration: none;
+  font-family: var(--font-family-Raleway);
+  font-weight: var(--font-weight-700);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--letter-spacing-03em);
+  padding-top: 30px;
+  &::after {
+    content: "Studio";
+    color: #fff;
+  }
+}
+
+.footer-address {
+  .footer-address__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 28px;
+    font-style: var(--font-style-address);
+    text-decoration: none;
+
+    .footer-address__list-city {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: var(--font-weight-400);
+      font-size: var(--font-size-general);
+      line-height: var(--line-height-14);
+      letter-spacing: var(--letter-spacing-03em);
+      &:hover,
+      &:focus {
+        color: var(--color-hover-focus);
+        transition: var(--transition-hover-focus);
+      }
+    }
+    .footer-address__list-email,
+    .footer-address__list-phone {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-weight: var(--font-weight-400);
+      font-size: var(--font-size-general);
+      line-height: var(--line-height-14);
+      letter-spacing: var(--letter-spacing-03em);
+      &:hover,
+      &:focus {
+        color: var(--color-hover-focus);
+        transition: var(--transition-hover-focus);
+      }
+    }
+  }
+}
+
+.footer-address {
+  a {
+    &:hover,
+    &:focus {
+      color: var(--color-hover-focus);
+      transition: var(--transition-hover-focus);
+    }
+  }
+}
+
+.find-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 25px;
+  h3 {
+    font-family: var(--font-family-Roboto);
+    font-style: normal;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-general);
+    line-height: 16px;
+    letter-spacing: var(--letter-spacing-03em);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+    .find-us__item {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: var(--color-hover-focus);
+      }
+    }
+    a {
+      fill: #fff;
+    }
+  }
+}
+
+.newsletter {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  .newsletter__form {
+    .newsletter__input {
+      display: flex;
+      align-items: center;
+      width: 358px;
+      height: 50px;
+      color: rgba(255, 255, 255, 0.6);
+      background: #2f303a;
+      padding: 16px;
+      transition: var(--transition-hover-focus);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      &:focus {
+        border: 2px solid rgb(6, 100, 241);
+        outline: none;
+        border-color: #2196f3;
+        transition: var(--transition-hover-focus);
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--font-family-Roboto);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-medium);
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing-06em);
+    color: #ffffff;
+    padding-left: 43px;
+    transition: var(--transition-hover-focus);
+    cursor: pointer;
+    .icon__send {
+      fill: #fff;
+    }
+  }
+}
+.newsletter__label {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-family-Roboto);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-general);
+  line-height: 16px;
+  letter-spacing: var(--letter-spacing-03em);
+  text-transform: uppercase;
+  color: #ffffff;
+}
