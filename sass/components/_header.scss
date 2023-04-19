@@ -1,0 +1,109 @@
+.header-section-portfolio {
+  background-color: var(--background-color-header-and-main);
+  border: 1px solid #ececec;
+}
+
+.header {
+  background-color: var(--background-color-header-and-main);
+  border: 1px solid #ececec;
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px 32px 0px;
+    gap: 50px;
+    // flex-grow: 1;
+
+    &__container {
+      display: flex;
+      align-items: center;
+
+      .header-nav__logo {
+        color: #000000;
+        font-family: var(--font-family-Raleway);
+        font-weight: var(--font-weight-700);
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: var(--letter-spacing-03em);
+        text-decoration: none;
+        margin-right: 93px;
+        height: 31px;
+
+        &::before {
+          content: "Web";
+          color: #2196f3;
+        }
+      }
+      .header-nav__list {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        position: relative;
+
+        .current__page::after {
+          content: "";
+          display: block;
+          position: absolute;
+          border-bottom: 4px solid #2196f3;
+          border-radius: 2px;
+          width: 100%;
+          top: 49px;
+          color: #2196f3;
+        }
+        .header-nav__item {
+          position: relative;
+          height: 16px;
+          .header-nav__link {
+            font-weight: var(--font-weight-500);
+            font-size: var(--font-size-general);
+            letter-spacing: var(--letter-spacing-02em);
+            color: var(--text-color);
+            text-decoration: none;
+            line-height: var(--line-height-14);
+            transition: var(--transition-hover-focus);
+            &:hover,
+            &:focus {
+              color: var(--color-hover-focus);
+              transition: var(--transition-hover-focus);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-nav__contacts {
+  display: flex;
+  gap: 40px;
+
+  .header-nav__contacts-link {
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-02em);
+    color: #757575;
+    text-decoration: none;
+    transition: var(--transition-hover-focus);
+
+    &:hover,
+    &:focus {
+      color: var(--color-hover-focus);
+    }
+  }
+}
+
+.header-nav__contacts-item {
+  .header-nav__contacts-svg {
+    margin-right: 10px;
+    fill: #757575;
+    &:hover {
+      fill: var(--color-hover-focus);
+    }
+    &:focus {
+      fill: var(--color-hover-focus);
+    }
+  }
+}
+
+// Responsive Design

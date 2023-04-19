@@ -1,0 +1,27 @@
+.second-section__list {
+  display: flex;
+  gap: 30px;
+  .second-section__item {
+    margin-bottom: 56px;
+  }
+}
+.second-section__details {
+  .second-section__details-title {
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-03em);
+    text-transform: uppercase;
+    color: var(--text-color);
+    padding-right: 30px;
+    height: 16px;
+  }
+  .second-section__details-paragraph {
+    font-weight: var(--font-weight-general);
+    font-size: var(--font-size-general);
+    line-height: 1.71;
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--our-team-job-and-paragraph-title-details);
+    height: 75px;
+  }
+}
