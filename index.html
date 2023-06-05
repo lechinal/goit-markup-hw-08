@@ -90,15 +90,15 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="header-nav__contacts unstyled-list menu">
-                    <li class="header-nav__contacts-item"><a class="header-nav__contacts-link"
+                <ul class="header-nav__contacts unstyled-list">
+                    <li class="header-nav__contacts-item menu"><a class="header-nav__contacts-link"
                             href="mailto:info@devstudio.com">
                             <svg class="header-nav__contacts-svg" width="16" height="12">
                                 <use href="images/symbol-defs.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
-                    <li class="header-nav__contacts-item"><a class="header-nav__contacts-link"
+                    <li class="header-nav__contacts-item menu"><a class="header-nav__contacts-link"
                             href="tel:+1212-772-4150">
                             <svg class="header-nav__contacts-svg" width="16" height="12">
                                 <use href="images/symbol-defs.svg#icon-smartphone"></use>
@@ -129,62 +129,61 @@
             </div>
         </section>
         <!-- Details Section -->
-        <section class="second-section section">
+        <section class="second-section section container">
             <div class="container">
                 <ul class="second-section__list unstyled-list">
                     <li>
                         <div class="second-section__item">
-                            <svg width="270" height="120">
-                                <use href="./images/symbol-defs.svg#antenna"></use>
-                            </svg>
+                            <a href>
+                                <svg width="270" height="120">
+                                    <use href="./images/symbol-defs.svg#antenna"></use>
+                                </svg></a>
                         </div>
                         <div class="second-section__details">
                             <h3 class="second-section__details-title">ATTENTION TO DETAILS</h3>
-                            <p class="second-section__details-paragraph">We go into all the details and processes<br>
-                                of your
-                                business
-                                to develop a <br>customized solution.</p>
+                            <p class="second-section__details-paragraph">We go into all the details and processes of
+                                your business to develop a customized solution.</p>
                         </div>
                     </li>
                     <li>
                         <div class="second-section__item">
-                            <svg width="270" height="120">
-                                <use href="./images/symbol-defs.svg#clock"></use>
-                            </svg>
+                            <a href>
+                                <svg width="270" height="120">
+                                    <use href="./images/symbol-defs.svg#clock"></use>
+                                </svg></a>
                         </div>
                         <div class="second-section__details">
                             <h3 class="second-section__details-title">Punctuality</h3>
-                            <p class="second-section__details-paragraph">With us, you can feel safe and secure.<br> An
-                                important
-                                principle of the company:<br> respect your time and deadlines.</p>
+                            <p class="second-section__details-paragraph">With us, you can feel safe and secure. An
+                                important principle of the company: respect your time and deadlines.</p>
                         </div>
                     </li>
                     <li>
                         <div class="second-section__item">
-                            <svg width="270" height="120">
-                                <use href="./images/symbol-defs.svg#diagram"></use>
-                            </svg>
+                            <a href>
+                                <svg width="270" height="120">
+                                    <use href="./images/symbol-defs.svg#diagram"></use>
+                                </svg></a>
                         </div>
                         <div class="second-section__details">
                             <h3 class="second-section__details-title">PLANNING</h3>
-                            <p class="second-section__details-paragraph">You will be able to observe and <br>participate
+                            <p class="second-section__details-paragraph">You will be able to observe and participate
                                 in
                                 every
-                                phase of solution <br>development and implementation.</p>
+                                phase of solution development and implementation.</p>
                         </div>
                     </li>
                     <li>
                         <div class="second-section__item">
-                            <svg width="270" height="120">
-                                <use href="./images/symbol-defs.svg#astronaut"></use>
-                            </svg>
+                            <a href>
+                                <svg width="270" height="120">
+                                    <use href="./images/symbol-defs.svg#astronaut"></use>
+                                </svg></a>
                         </div>
                         <div class="second-section__details">
                             <h3 class="second-section__details-title">MODERN TECHNOLOGIES</h3>
-                            <p class="second-section__details-paragraph">We use innovative tools to solve<br>assigned
-                                tasks.It's
-                                time
-                                to simplify work<br> processes.</p>
+                            <p class="second-section__details-paragraph">We use innovative tools to solveassigned
+                                tasks.It's time to simplify work processes.</p>
                         </div>
                     </li>
                 </ul>
@@ -213,7 +212,15 @@
                 <h2 class="our-team__title">Our Team</h2>
                 <ul class="our-team__list unstyled-list">
                     <li class="our-team__list-item">
-                        <img src="./images/ourteam1.jpg" alt="Christopher Walker" height="260">
+                        <picture class="our-team__picture">
+                            <source media="screen and (max-width: 480px)"
+                                srcset="/images/ourteam1-M-X1.jpg 1x, /images/ourteam1-M-X2.jpg 2x">
+                            <source media="screen and (min-width: 768px)"
+                                srcset="/images/ourteam1-T-X1.jpg 1x, /images/ourteam1-T-X2.jpg 2x">
+                            <source media="screen and (min-width: 1200px)"
+                                srcset="/images/ourteam1-D-X1.jpg 1x, /images/ourteam1-D-X2.jpg 2x">
+                            <img src="./images/ourteam1-M-X1.jpg" alt="Christopher Walker" height="260">
+                        </picture>
                         <div class="members">
                             <h3 class="members__name">Christopher Walker</h3>
                             <p class="members__job">Product Designer</p>
@@ -244,7 +251,15 @@
                         </div>
                     </li>
                     <li class="our-team__list-item">
-                        <img src="./images/ourteam2.jpg" alt="Kylie Evans" height="260">
+                        <picture class="our-team__picture">
+                            <source media="screen and (max-width: 480px)"
+                                srcset="/images/ourteam2-M-X1.jpg 1x, /images/ourteam2-M-X2.jpg 2x">
+                            <source media="screen and (min-width: 768px)"
+                                srcset="/images/ourteam2-T-X1.jpg 1x, /images/ourteam2-T-X2.jpg 2x">
+                            <source media="screen and (min-width: 1200px)"
+                                srcset="/images/ourteam2-D-X1.jpg 1x, /images/ourteam2-D-X2.jpg 2x">
+                            <img src="./images/ourteam2-M-X1.jpg" alt="Kylie Evans" height="260">
+                        </picture>
                         <div class="members">
                             <h3 class="members__name">Kylie Evans</h3>
                             <p class="members__job">Frontend Developer</p>
@@ -274,7 +289,15 @@
                             </ul>
                     </li>
                     <li class="our-team__list-item">
-                        <img src="./images/ourteam3.jpg" alt="Ryan Harris" height="260">
+                        <picture class="our-team__picture">
+                            <source media="screen and (max-width: 480px)"
+                                srcset="/images/ourteam3-M-X1.jpg 1x, /images/ourteam3-M-X2.jpg 2x">
+                            <source media="screen and (min-width: 768px)"
+                                srcset="/images/ourteam3-T-X1.jpg 1x, /images/ourteam3-T-X2.jpg 2x">
+                            <source media="screen and (min-width: 1200px)"
+                                srcset="/images/ourteam3-D-X1.jpg 1x, /images/ourteam3-D-X2.jpg 2x">
+                            <img src="./images/ourteam3-M-X1.jpg" alt="Ryan Harris" height="260">
+                        </picture>
                         <div class="members">
                             <h3 class="members__name">Ryan Harris</h3>
                             <p class="members__job">Marketing</p>
@@ -304,7 +327,15 @@
                             </ul>
                     </li>
                     <li class="our-team__list-item">
-                        <img src="./images/ourteam4.jpg" alt="Tyler Moore" height="260">
+                        <picture class="our-team__picture">
+                            <source media="screen and (max-width: 480px)"
+                                srcset="/images/ourteam4-M-X1.jpg 1x, /images/ourteam4-M-X2.jpg 2x">
+                            <source media="screen and (min-width: 768px)"
+                                srcset="/images/ourteam4-T-X1.jpg 1x, /images/ourteam4-T-X2.jpg 2x">
+                            <source media="screen and (min-width: 1200px)"
+                                srcset="/images/ourteam4-D-X1.jpg 1x, /images/ourteam4-D-X2.jpg 2x">
+                            <img src="./images/ourteam4-M-X1.jpg" alt="Tyler Moore" height="260">
+                        </picture>
                         <div class="members">
                             <h3 class="members__name">Tyler Moore</h3>
                             <p class="members__job">UI Designer</p>
@@ -415,7 +446,7 @@
     <!-- Footer -->
     <footer class="footer-section section">
         <div class="container footer__container">
-            <div>
+            <div class="footer__container-address">
                 <a class="footer-logo" href="Studio.html">Web</a>
                 <address class="footer-address">
                     <ul class="footer-address__list unstyled-list">

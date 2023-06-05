@@ -27,24 +27,24 @@
                 <div class="header-nav__container">
                     <a class="header-nav__logo" href="index.html">Studio</a>
                     <ul class="header-nav__list unstyled-list">
-                        <li class="header-nav__item"><a class="header-nav__link" href="index.html">Studio</a>
+                        <li class="header-nav__item menu"><a class="header-nav__link " href="index.html">Studio</a>
                         </li>
-                        <li class="header-nav__item"><a class="header-nav__link current__page"
+                        <li class="header-nav__item menu"><a class="header-nav__link current__page"
                                 href="portfolio.html">Portfolio</a>
                         </li>
-                        <li class="header-nav__item"><a class="header-nav__link" href="Contacts.html">Contacts</a>
+                        <li class="header-nav__item menu"><a class="header-nav__link" href="Contacts.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
                 <ul class="header-nav__contacts unstyled-list">
-                    <li class="header-nav__contacts-item"><a class="header-nav__contacts-link"
+                    <li class="header-nav__contacts-item menu"><a class="header-nav__contacts-link"
                             href="mailto:info@devstudio.com">
                             <svg class="header-nav__contacts-svg" width="16" height="12">
                                 <use href="images/symbol-defs.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
-                    <li class="header-nav__contacts-item"><a class="header-nav__contacts-link"
+                    <li class="header-nav__contacts-item menu"><a class="header-nav__contacts-link"
                             href="tel:+1212-772-4150">
                             <svg class="header-nav__contacts-svg" width="16" height="12">
                                 <use href="images/symbol-defs.svg#icon-smartphone"></use>
@@ -52,7 +52,17 @@
                             +1212-772-4150</a>
                     </li>
                 </ul>
+                <!-- Modal Button -->
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </nav>
+
         </div>
     </header>
     <!-- Main -->
@@ -62,7 +72,7 @@
             <div class="container">
                 <ul class="buttons-section__list unstyled-list">
                     <li><button class="buttons-section__list-item" type="button">All</button></li>
-                    <li><button class="buttons-section__list-item" type="button">Web-sites</button></li>
+                    <li><button class="buttons-section__list-item" type="button">Web-site</button></li>
                     <li><button class="buttons-section__list-item" type="button">Apps</button></li>
                     <li><button class="buttons-section__list-item" type="button">Design</button></li>
                     <li><button class="buttons-section__list-item" type="button">Marketing</button></li>
@@ -206,7 +216,7 @@
     <!-- Footer -->
     <footer class="footer-section section">
         <div class="container footer__container">
-            <div>
+            <div class="footer__container-address">
                 <a class="footer-logo" href="Studio.html">Web</a>
                 <address class="footer-address">
                     <ul class="footer-address__list unstyled-list">
