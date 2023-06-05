@@ -2,11 +2,12 @@
   background-color: #f5f4fa;
   display: flex;
   padding-right: 30px;
+  width: 100%;
 
   &__title {
     font-weight: var(--font-weight-700);
     font-size: 36px;
-    line-height: 1.167;
+    line-height: 33px;
     text-align: center;
     color: var(--color-text);
     padding: 0px 0px 50px 0px;
@@ -14,19 +15,31 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-direction: column;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.our-team__list {
-  padding-right: 30px;
-  .our-team__list-item {
+.our-team {
+  &__picture {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+  }
+}
+.our-team__list {
+  padding-left: 15px;
+  .our-team__list-item {
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
       0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
     background: #fff;
     padding-bottom: 30px;
+    width: fit-content;
+    // width: 450px;
+    // height: 622px;
+    // padding-top: 123px;
 
     .members {
       display: flex;
@@ -83,5 +96,15 @@
       background-color: var(--color-hover-focus);
       transition: var(--transition-hover-focus);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our-team__list-item {
+    width: calc(50% - 15px);
   }
 }

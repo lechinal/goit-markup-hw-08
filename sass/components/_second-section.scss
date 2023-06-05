@@ -1,15 +1,35 @@
 .second-section__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
   .second-section__item {
-    margin-bottom: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 120px;
+
+    background: #f5f4fa;
+    border-radius: 4px;
   }
 }
 .second-section__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
   .second-section__details-title {
+    display: flex;
+    align-content: center;
     font-weight: var(--font-weight-700);
     font-size: var(--font-size-general);
-    line-height: var(--line-height-14);
+    line-height: 16px;
     letter-spacing: var(--letter-spacing-03em);
     text-transform: uppercase;
     color: var(--text-color);
@@ -17,11 +37,62 @@
     height: 16px;
   }
   .second-section__details-paragraph {
-    font-weight: var(--font-weight-general);
+    font-weight: var(--font-weight-400);
     font-size: var(--font-size-general);
-    line-height: 1.71;
+    line-height: 24px;
     letter-spacing: var(--letter-spacing-03em);
     color: var(--our-team-job-and-paragraph-title-details);
-    height: 75px;
+    height: 50px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .second-section {
+    .container {
+      display: flex;
+      .second-section__list {
+        flex-direction: row;
+        li {
+          flex-basis: calc((100% - 30px) / 2);
+        }
+      }
+    }
+    .second-section__item {
+      width: 354px;
+    }
+    .second-section__details-title {
+      width: 270px;
+    }
+    .second-section__details-paragraph {
+      width: 354px;
+      height: 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .second-section {
+    max-width: 100%;
+    .container {
+      .second-section__list {
+        // display: flex;
+        // gap: 30px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        li {
+          flex-basis: calc((100% - 90px) / 4);
+          .second-section__item {
+            width: 270px;
+          }
+          .second-section__details {
+            width: 270px;
+            .second-section__details-paragraph {
+              width: 270px;
+              height: 75px;
+            }
+          }
+        }
+      }
+    }
   }
 }

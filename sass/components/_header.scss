@@ -97,9 +97,7 @@
   .header-nav__contacts-svg {
     margin-right: 10px;
     fill: #757575;
-    &:hover {
-      fill: var(--color-hover-focus);
-    }
+    &:hover,
     &:focus {
       fill: var(--color-hover-focus);
     }
@@ -107,3 +105,15 @@
 }
 
 // Responsive Design
+
+@media only screen and (max-width: 1199px) {
+  .header-nav__container {
+    padding-left: 15px;
+  }
+  .header-nav__contacts {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 15px;
+    align-items: flex-start;
+  }
+}

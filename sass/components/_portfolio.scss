@@ -5,6 +5,8 @@
     .buttons-section__list {
       display: flex;
       gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
       .buttons-section__list-item {
         background: #f5f4fa;
         border: none;
@@ -30,6 +32,13 @@
   }
 }
 
+.container {
+  .buttons-section__list {
+    li {
+      display: flex;
+    }
+  }
+}
 .cards-list {
   display: flex;
   flex-direction: row;
@@ -76,7 +85,7 @@
       text-align: center;
       color: #ffffff;
       padding: 63px 24px 91px 24px;
-      width: 322px;
+      width: 370px;
       height: 140px;
     }
   }
@@ -101,4 +110,17 @@
   letter-spacing: var(--letter-spacing-03em);
   color: var(--our-team-job-and-paragraph-title-details);
   padding: 0px 0px 20px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
