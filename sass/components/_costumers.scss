@@ -29,17 +29,15 @@
       &:focus {
         border-color: var(--color-hover-focus);
         transition: var(--transition-hover-focus);
+        .costumers__svg {
+          fill: var(--color-hover-focus);
+          transition: var(--transition-hover-focus);
+        }
+      }
+      .costumers__svg {
+        fill: #afb1b8;
       }
     }
-  }
-}
-
-.costumers__svg {
-  fill: #afb1b8;
-  &:hover {
-    fill: var(--color-hover-focus);
-    cursor: pointer;
-    transition: var(--transition-hover-focus);
   }
 }
 
