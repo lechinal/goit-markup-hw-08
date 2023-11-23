@@ -76,33 +76,40 @@
 .header-nav__contacts {
   display: flex;
   gap: 40px;
-
-  .header-nav__contacts-link {
-    font-weight: var(--font-weight-500);
-    font-size: var(--font-size-general);
-    line-height: var(--line-height-14);
-    letter-spacing: var(--letter-spacing-02em);
-    color: #757575;
-    text-decoration: none;
-    transition: var(--transition-hover-focus);
-
-    &:hover,
-    &:focus {
-      color: var(--color-hover-focus);
-    }
-  }
-}
-
-.header-nav__contacts-item {
-  .header-nav__contacts-svg {
-    margin-right: 10px;
-    fill: #757575;
+  .header-nav__contacts-item {
     &:hover,
     &:focus {
       fill: var(--color-hover-focus);
+      // background-color: var(--color-hover-focus);
+    }
+
+    .header-nav__contacts-link {
+      font-weight: var(--font-weight-500);
+      font-size: var(--font-size-general);
+      line-height: var(--line-height-14);
+      letter-spacing: var(--letter-spacing-02em);
+      color: #757575;
+      text-decoration: none;
+      transition: var(--transition-hover-focus);
+
+      &:hover,
+      &:focus {
+        color: var(--color-hover-focus);
+      }
     }
   }
 }
+
+// .header-nav__contacts-item {
+//   .header-nav__contacts-svg {
+//     margin-right: 10px;
+//     fill: #757575;
+//     &:hover,
+//     &:focus {
+//       fill: var(--color-hover-focus);
+//     }
+//   }
+// }
 
 // Responsive Design
 
