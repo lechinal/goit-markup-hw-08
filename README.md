@@ -1,4 +1,4 @@
-# goit-markup-hw-08
+# goit-markup-hw-08 WebStudio
 
 # metodologie BEM,
 # metodologie SASS,
